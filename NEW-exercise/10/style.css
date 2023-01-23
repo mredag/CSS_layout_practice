@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background-color: lightgray;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    background-color: rgb(88, 94, 99);
+    flex: 0 1 50px;
+}
+
+.right-header{
+    display: flex;
+    gap: 20px;
+}
+
+.left-header{
+    display: flex;
+    gap: 10px   ;
+}
+
+.left-header > div {
+    height: 1.5rem;
+    width: 5rem;
+    background-color: black;
+}
+
+#mobile-button{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: lightgray;
+    display: none;
+}
+
+.logo{
+    font-weight: bold;
+    text-shadow: black;
+    align-self: center;
+}
+
+.logo-side{
+    width: 20rem;
+    height: 1.5rem;
+    background-color: lightgray;
+    
+}
+
+.container{
+    display: flex;    
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.title{
+    background-color: rgb(161, 161, 161);
+    width: 300px;
+    height: 20px;
+}
+
+.slider{
+    width: 500px;
+    height: 250px;
+    background-color: gray;
+}
+
+.squares{
+    display: flex;
+    width: 500px;
+    height: 125px;
+    justify-content: space-between;
+}
+
+.squares > div {
+    height: 5rem;
+    width: 5rem;
+    background-color: rgb(153, 146, 146);
+}
+
+@media (max-width:1280px){
+    header{
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+    .logo-side{
+        display: none;
+    }
+
+    #mobile-button{
+        display: flex;
+    }
+
+    .left-header{
+        margin-left: auto;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width:600px){
+    header{
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+
+    .logo-side{
+        display: none;
+    }
+
+    .left-header{
+        display: none;
+    }
+    #mobile-button{
+        display: flex;
+    }
+}
